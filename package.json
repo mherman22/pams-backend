@@ -1,0 +1,28 @@
+{
+  "name": "pams-backend",
+  "version": "1.0.0",
+  "description": "Backend for pams built using parse-server, nodejs, expressjs, mongodb",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon index.js",
+    "start": "node index.js",
+    "coverage": "nyc jasmine",
+    "test": "mongodb-runner start && jasmine",
+    "prettier": "prettier --write '{cloud,spec}/{**/*,*}.js' 'index.js'"
+  },
+  "keywords": [],
+  "author": "mherman22",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "parse": "^3.4.4",
+    "parse-dashboard": "^4.1.4",
+    "parse-server": "^5.2.7"
+  },
+  "devDependencies": {
+    "mongodb-runner": "^4.9.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  }
+}
