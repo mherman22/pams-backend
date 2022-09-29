@@ -21,7 +21,9 @@ const dashboard = new ParseDashboard({
 }, options)
 
 if (!process.env.MONGODB_URI) {
-  console.log('DATABASE_URI not specified, falling back to localhost.');
+  console.log('MONGODB_URI not specified, falling back to localhost.');
+}else {
+  console.log('mongo database has connected successfully!');
 }
 const config = {
   databaseURI: process.env.MONGODB_URI,
