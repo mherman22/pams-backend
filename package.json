@@ -2,6 +2,7 @@
   "name": "pams-backend",
   "version": "1.0.0",
   "description": "Backend for pams built using parse-server, nodejs, expressjs, mongodb",
+  "repository": {"type": "git","url": "https://github.com/mherman22/pams-backend.git"},
   "main": "index.js",
   "scripts": {
     "watch": "nodemon index.js",
